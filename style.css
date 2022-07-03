@@ -1,0 +1,168 @@
+*{
+
+    box-sizing: border-box;
+  
+}
+body{
+    position: relative;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 100%;
+  
+    height:auto;
+    background-color:blanchedalmond;
+
+}
+
+    
+header{
+    display: flex;
+    position: relative;
+ 
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 100px;
+   
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto 25px;
+    padding: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    box-sizing: border-box;
+    padding-left: 50px;
+    
+    flex-grow: 2;
+}
+
+
+@media screen and (min-width: 220px) {
+.profile{
+    
+    justify-content: space-around;
+    margin: 25px auto;
+position: relative;
+    
+    align-items: center;
+}
+
+.profile-image {
+    
+   display: block;
+ 
+    border-radius: 50%;
+height: 125px;  
+  width: 125px;
+    border: none;
+    /* margin-right: auto; */
+}
+
+.user-name{
+    display: inline-block;
+    font-weight: 300;
+    /* margin-left: 70px; */
+    font-size: 12px;
+}
+.btn{
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: black;
+    padding: 0;
+    cursor: pointer;
+}
+.fas fa-cog{
+    color: black;
+}
+.Edit-Profile{
+    display: inline-block;
+  
+    font-family:"Open Sans", Arial, sans-serif ;
+  font-weight: 600;
+    cursor: pointer;
+text-align: center;
+   font-size: 12px ;
+   border: 0.1px solid rgb(216, 227, 248);
+   border-radius: 5px;
+   margin-left: 10px;
+  padding: 2px 15px;
+  background-color: none;
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    
+   list-style: none;
+   margin:10px;
+}
+li{
+    display:inline-block ;
+  
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 20px;
+    list-style: none;
+}
+.post, .follower, .following{
+    font-weight: 800;
+   
+}
+.paragraph{
+display: flex;
+align-items: center;
+font-size: 12px;
+font-weight: 400px;
+
+}
+.name{
+    font-weight: 600px ;
+    font-size: 12px;
+}
+
+
+.Gallery{
+    max-width: 900px;
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    height: auto;
+   
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+align-items: center;
+
+justify-content: center;
+gap: 20px;
+}
+.pic{
+    width: 250px;
+    height: 300px;
+}
+.img-container{
+    width:fit-content;
+    height: fit-content;
+    position: relative;
+}
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    background-color: rgba(0,0, 0, 0.7);
+}
+.inner:hover{
+    opacity: 1;
+}
+.fas{
+    color: aliceblue;
+}
+
+}
